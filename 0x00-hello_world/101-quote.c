@@ -2,7 +2,7 @@
 /**
  * main - Entry point.
  *
- * Description: The code prints to the error output.
+ * Description: coding is life.
  * Return: would always return 1 if successful
  */
 int main(void)
