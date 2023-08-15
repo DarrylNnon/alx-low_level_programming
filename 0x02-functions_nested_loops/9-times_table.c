@@ -4,6 +4,7 @@
  * times_table - Prints the 9 times table
  *
  * Return: no return
+ * Author: Darryl Nnon
  */
 void times_table(void)
 {
