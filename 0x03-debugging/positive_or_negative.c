@@ -1,21 +1,12 @@
+#include <stdio.h>
 #include "main.h"
-/**
- *positive_or_negative - Determine if a number is +ve or _ve or zero
- *@i: integer
- *Return: (0);
- */
+
 void positive_or_negative(int i)
 {
-	if (i < 0)
-	{
-		printf("%d is %s\n", i, "negative");
-	}
-	else if (i > 0)
-	{
-		printf("%d is %s\n", i, "positive");
-	}
+	if (i > 0)
+		printf("%d is positive\n", i);
+	else if (i == 0)
+		printf("%d is zero\n", i);
 	else
-	{
-		printf("%d is %s\n", i, "zero");
-	}
+		printf("%d is negative\n", i);
 }
