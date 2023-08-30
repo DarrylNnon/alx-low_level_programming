@@ -7,16 +7,16 @@
  * Return: square root or -1.
  * Author: Darryl Nnon
  */
-int power_operation(int n, int b)
+int power_operation(int n, int c)
 {
-	if (b % (n / b) == 0)
+	if (c % (n / c) == 0)
 	{
-		if (b * (n / b) == n)
-			return (b);
+		if (c * (n / c) == n)
+			return (c);
 		else
 			return (-1);
 	}
-	return (0 + power_operation(n, b + 1));
+	return (0 + power_operation(n, c + 1));
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number.
