@@ -1,4 +1,4 @@
-#include "main.h"
+#include "msin.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
@@ -11,23 +11,23 @@
  */
 void _is_zero(char *argv[])
 {
-	int a, asn1 = 1, asn2 = 1;
+	int i, isn1 = 1, isn2 = 1;
 
-	for (a = 0; argv[1][a]; a++)
-		if (argv[1][a] != '0')
+	for (i = 0; argv[1][i]; i++)
+		if (argv[1][i] != '0')
 		{
-			asn1 = 0;
+			isn1 = 0;
 			break;
 		}
 
-	for (a = 0; argv[2][a]; a++)
-		if (argv[2][a] != '0')
+	for (i = 0; argv[2][i]; i++)
+		if (argv[2][i] != '0')
 		{
-			asn2 = 0;
+			isn2 = 0;
 			break;
 		}
 
-	if (asn1 == 1 || asn2 == 1)
+	if (isn1 == 1 || isn2 == 1)
 	{
 		printf("0\n");
 		exit(0);
@@ -43,10 +43,10 @@ void _is_zero(char *argv[])
  */
 char *_initialize_array(char *ar, int lar)
 {
-	int b = 0;
+	int i = 0;
 
-	for (b = 0; b < lar; b++)
-		ar[b] = '0';
+	for (i = 0; i < lar; i++)
+		ar[i] = '0';
 	ar[lar] = '\0';
 	return (ar);
 }
