@@ -1,10 +1,12 @@
 #include "lists.h"
 /**
-* print list - print list
+* print list - print all the element of  list_t list.
+* @h: Singly linked list
+* Return: number of elements in the list
 * Author: Darryl Nnon
 */
 
-size_t print_list(const list_t *h)
+size_t list_len(const list_t *h)
 {
 	size_t nelem;
 
